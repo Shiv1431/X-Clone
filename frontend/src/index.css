@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Default Light Theme */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: rgb(29, 155, 240);  /* Primary color for light theme */
+  --color-secondary: rgb(24, 24, 24);  /* Secondary color for light theme */
+}
+
+/* Black Theme (Override when needed) */
+@plugin "daisyui/theme" {
+  name: "black";
+  --color-primary: rgb(29, 155, 240);  /* Same as above */
+  --color-secondary: rgb(24, 24, 24);  /* Same as above */
+  /* Apply additional black theme styles if needed */
+}
